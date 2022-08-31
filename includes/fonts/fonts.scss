@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Arame-Regular";
+    src: url('Arame-Thin/Arame-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BlenderPro-Medium';
+    src: url("blender-pro/BlenderPro-Medium.eot"); /* IE9 Compat Modes */
+    src: url('blender-pro/BlenderPro-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('blender-pro/BlenderPro-Medium.woff') format('woff'), /* Modern Browsers */
+         url('blender-pro/BlenderPro-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('blender-pro/BlenderPro-Medium.woff2')  format('woff2');
+  }
+  @font-face {
+    font-family: 'BlenderPro-Bold';
+    src: url("blender-pro/BlenderPro-Bold.eot"); /* IE9 Compat Modes */
+    src: url('blender-pro/BlenderPro-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('blender-pro/BlenderPro-Bold.woff') format('woff'), /* Modern Browsers */
+         url('blender-pro/BlenderPro-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('blender-pro/BlenderPro-Bold.woff2')  format('woff2');
+  }

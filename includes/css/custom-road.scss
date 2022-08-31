@@ -1,0 +1,276 @@
+$color-white:#fff;
+$brand-color-g:#0666BC;
+$brand-color:#df8625;
+$textPrimaryColor: #3AA2FF;
+$textSecondaryColor: #B5B5B5;
+
+.ps-timeline-sec {
+    position: relative;
+
+    .container {
+        position: relative;
+
+        ol {
+
+            @include respond-to(xs) {
+                
+                &.ps-timeline {
+                    margin: 130px 0 !important;
+                    border-left: 2px solid #0666BC;
+                    padding-left: 0 !important;
+                    padding-top: 120px !important;
+                    border-top: 0 !important;
+                    margin-left: 25px !important;
+
+                    li {
+                        height: 220px;
+                        float: none !important;
+                        width: inherit !important;
+
+                        &:nth-child(2) {
+                            .img-handler-bot {
+                                img {
+                                    width: 70px;
+                                }
+                            }
+                        }
+
+                        &:last-child {
+                            margin: 0;
+                            bottom: 0 !important;
+                            height: 120px;
+                            background: unset !important;
+
+                            .img-handler-bot {
+                                bottom: 40px !important;
+                                width: 40% !important;
+                                margin-left: 25px !important;
+                                margin-top: 0 !important;
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+
+                            .ps-top {
+                                margin-bottom: 0 !important;
+                                top: 20px;
+                                width: 50% !important;
+                            }
+                        }
+
+
+
+                        span {
+                            left: 0 !important;
+
+                            &.ps-sp-top {
+                                &:before {
+                                    content: none !important;
+                                }
+
+                                &:after {
+                                    content: none !important;
+                                }
+                            }
+
+                            &.ps-sp-bot {
+                                &:before {
+                                    content: none !important;
+                                }
+
+                                &:after {
+                                    content: none !important;
+                                }
+                            }
+                        }
+
+                        .img-handler-top {
+                            position: absolute !important;
+                            bottom: 150px !important;
+                            width: 30% !important;
+                            float: left !important;
+                            margin-left: 35px !important;
+                            margin-bottom: 0 !important;
+
+                            img {
+                                margin: 0 auto !important;
+                                width: 80% !important;
+                            }
+                        }
+
+                        .img-handler-bot {
+                            position: absolute !important;
+                            bottom: 115px !important;
+                            width: 30% !important;
+                            float: left !important;
+                            margin-left: 35px !important;
+                            margin-bottom: 0 !important;
+
+                        }
+
+                        p {
+                            text-align: left !important;
+                            width: 100% !important;
+                            margin: 0 auto !important;
+                            margin-top: 0px !important;
+                        }
+
+                        .ps-top {
+                            width: 60% !important;
+                            float: right !important;
+                            right: 0;
+                            top: -40px;
+                        }
+
+                        .ps-bot {
+                            width: 60% !important;
+                            float: right !important;
+                            right: 0;
+                            top: -115px;
+                        }
+                    }
+                }
+            }
+
+            &.ps-timeline {
+                margin-top: 100px;
+                padding: 0;
+                border-top: 2px solid $brand-color-g;
+                list-style: none;
+
+                li {
+                    float: left;
+                    width: 20%;
+                    padding-top: 30px;
+                    position: relative;
+
+                    &:last-child {
+                        background: #094d5c;
+                        padding: 1px;
+                        margin-top: -2.5px;
+                        span.ps-sp-top:before {
+                            background: #094d5c;
+                        }
+
+                        span {
+                            background-image: url(../../includes/img/sec-4-bullet-x.svg);
+                        }
+                        .ps-bot {
+                            margin-top: 110px;
+                            .text-1, .text-2 {
+                                opacity: 0.3;
+                            }   
+                        }
+                    }
+                    span {
+                        width: 40px;
+                        height: 40px;
+                        margin-left: -20px;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: -20px;
+                        left: 50%;
+                        background-image: url(../../includes/img/sec-4-bullet.svg);
+
+                        
+                        &.ps-sp-top {
+                            &:before {
+                                content: '';
+                            color: #0666BC;
+                            width: 1px;
+                            height: 40px;
+                            background: #0666BC;
+                            position: absolute;
+                            top: 65px;
+                            left: 50%;
+                            }
+
+                       
+                        }
+
+                        &.ps-sp-bot {
+                            &:before {
+                                content: '';
+                                color: $brand-color-g;
+                                width: 2px;
+                                height: 50px;
+                                background: $brand-color-g;
+                                position: absolute;
+                                bottom: -50px;
+                                left: 50%;
+                            }
+
+                            &:after {
+                                content: '';
+                                color: $brand-color-g;
+                                width: 8px;
+                                height: 8px;
+                                background: $brand-color-g;
+                                position: absolute;
+                                top: 90px;
+                                left: 44%;
+                                border-radius: 100%;
+                            }
+                        }
+                    }
+
+                    .img-handler-top {
+                        position: absolute;
+                        bottom: 0;
+                        margin-bottom: 130px;
+                        width: 100%;
+
+                        img {
+                            display: table;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .img-handler-bot {
+                        position: absolute;
+                        margin-top: 60px;
+                        width: 100%;
+
+                        img {
+                            display: table;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    p {
+                        text-align: center;
+                        width: 80%;
+                        margin: 0 auto;
+                    }
+
+                    .ps-top {
+                        position: absolute;
+                        bottom: 0;
+                        margin-bottom: 100px;
+                    }
+
+                    .ps-bot {
+                        position: absolute;
+                        margin-top: 80px;
+
+                        .text-1 {
+                            font-size: 20px;
+                            letter-spacing: 1;
+                            line-height: 30px;
+                            font-family: BlenderPro-Medium;
+                            color: $textSecondaryColor;
+                        }
+                        .text-2 {
+                            font-size: 24px;
+                            letter-spacing: 1.2;
+                            line-height: 25px;
+                            font-family: BlenderPro-Bold;
+                            color: $textPrimaryColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
